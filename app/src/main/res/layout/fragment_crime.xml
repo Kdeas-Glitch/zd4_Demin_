@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.MaterialComponents">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:listSeparatorTextViewStyle"
+        android:text="@string/crime_title_label"/>
+
+    <EditText
+        android:id="@+id/crime_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/crime_title_hint"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:listSeparatorTextViewStyle"
+        android:text="@string/crime_details_label"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:icon="@android:drawable/ic_media_next"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/gray"
+        android:id="@+id/crime_date"/>
+
+    <CheckBox
+        android:id="@+id/crime_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_solved_label"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:icon="@android:drawable/ic_media_next"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/gray"
+        android:text="@string/crime_suspect_text"
+        android:id="@+id/suspect"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:icon="@android:drawable/ic_media_next"
+        app:iconTint="@android:color/white"
+        app:backgroundTint="@color/gray"
+        android:text="@string/send_report"
+        android:id="@+id/send"/>
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Позвонить подозреваемому"
+        android:enabled="false" />
+
+
+</LinearLayout>
